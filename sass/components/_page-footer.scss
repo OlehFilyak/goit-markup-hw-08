@@ -1,0 +1,131 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+
+  & .container {
+    display: flex;
+    justify-self: start;
+    align-items: baseline;
+  }
+}
+
+.footer__address {
+  width: 231px;
+}
+.footer__social {
+  margin-left: 70px;
+}
+
+.footer-social__item {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-social__list {
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+}
+
+.footer-social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--white-color);
+  background-color: #ffffff10;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+    color: var(--white-color);
+  }
+}
+
+.footer-social__icon {
+  fill: currentColor;
+}
+
+.footer__title {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: var(--roboto-font);
+  color: var(--white-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.address__map {
+  color: var(--white-color);
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.subs__form {
+  display: block;
+  margin-left: 93px;
+  width: 570px;
+}
+.subs__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+}
+.icon__send {
+  margin-left: 10px;
+  fill: currentColor;
+}
+.subscription {
+  display: flex;
+}
+.subs__input {
+  padding: 15px 16px;
+  min-width: 358px;
+  min-height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  color: #ffffff;
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    outline: 1px solid var(--accent-text-color);
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

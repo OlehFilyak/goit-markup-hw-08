@@ -1,0 +1,117 @@
+.form__title {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+.form__field {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  .comment {
+    margin-bottom: 20px;
+  }
+}
+
+.field__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color);
+}
+.field__input {
+  min-width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  cursor: pointer;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border-color: var(--accent-text-color);
+    outline: none;
+    + .icon__input {
+      fill: var(--accent-text-color);
+    }
+  }
+
+  &.textarea {
+    height: 120px;
+    padding: 12px 16px;
+    &::placeholder {
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.01em;
+
+      color: rgba(117, 117, 117, 0.5);
+    }
+  }
+}
+
+.icon__input {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  fill: 212121;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__check {
+  margin-bottom: 30px;
+}
+.check__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--primary-text-color);
+    border-radius: 2px;
+    margin-right: 7px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .check__input:checked + & {
+      background-color: var(--accent-text-color);
+      background-image: url(../images/checked.svg);
+      background-size: contain;
+      background-origin: border-box;
+      border-color: transparent;
+    }
+  }
+}
+
+.policy__link {
+  text-decoration: underline;
+  color: var(--accent-text-color);
+  margin-left: 5px;
+}
+.check__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
