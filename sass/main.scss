@@ -2,11 +2,12 @@
 @import './utils/visually-hidden';
 
 @import './base/base';
+@import './base/container';
+@import './base/button';
 @import './base/title';
 @import './components/logo';
 @import './components/page-header';
 @import './components/page-footer';
-@import './components/button';
 @import './components/modal';
 @import './components/modal-form';
 @import './components/hero';
