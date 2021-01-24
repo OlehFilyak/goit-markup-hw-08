@@ -512,22 +512,6 @@ img {
   }
 }
 
-/*
-
-
-
-
-
-
-
-
-.footer-social__list {
-  display: flex;
-  justify-content: space-between;
-  width: 206px;
-}
-
-*/
 .backdrop {
   position: fixed;
   top: 0;
