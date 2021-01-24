@@ -10,7 +10,7 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .team__worker {
     max-width: 450px;
     &:not(:last-child) {

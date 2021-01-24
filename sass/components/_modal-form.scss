@@ -16,8 +16,8 @@
   flex-direction: column;
   margin-bottom: 10px;
 
-  .comment {
-    margin-bottom: 20px;
+  &.comment {
+    margin-bottom: 22px;
   }
 }
 
@@ -72,8 +72,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
-  line-height: 1.71;
+
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 
@@ -114,4 +113,18 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media screen and (max-width: 1199px) {
+  .check__label {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .check__label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
